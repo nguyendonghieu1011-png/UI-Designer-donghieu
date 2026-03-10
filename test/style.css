@@ -1,0 +1,26 @@
+
+.text {
+  margin-top: 36px;
+  padding: 12px 0;
+  background-color: #210505;
+  display: flex;
+}
+
+p,h2 {
+  color: #ffff;
+}
+
+.item {
+ flex: 1;
+ margin: 10px;
+}
+
+.layout1 {
+  
+}
+
+h1 {
+  width: 40px;
+  padding: 30px;
+  background-color: #fb0808;
+}
