@@ -24,9 +24,17 @@ body {
 }
 
 /* header */
+
+header {
+  position: sticky; /* bám dính khi scoll */
+  top: 0px;
+  background: white;
+  z-index: 1000; /* đè lên nhau */
+  box-shadow:0 2px 10px rgba(196, 196, 196, 0.05);
+}
+
 .header {
-  padding: 32px 0 60px;
-  
+  padding: 22px 0 22px;
 }
 
 .header .body {
