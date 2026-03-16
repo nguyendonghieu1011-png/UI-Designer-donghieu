@@ -13,16 +13,63 @@ html(lang="en")
     .header 
      .container 
        .body 
-         .logo 
+          .logo 
            img(src="../assets/favicon/Union.svg" alt="")
            h1.text-logo Safe Tour 
              span .
 
-         ul.nav 
-           each x in ['Home', 'About', 'Destinations', 'Blog', 'Pages'] 
-            li= x
+          ul.nav
+              li Home
 
-         .button-btn 
+              li
+                | About
+                ul.submenu
+                  li 
+                      span Our Story
+                  li 
+                      span Team
+                  li 
+                      span Careers
+
+              li
+                | Destinations
+                ul.submenu
+                  li 
+                      span Asia
+                  li 
+                      span Europe
+                  li 
+                      span America
+                  li 
+                      span Korean
+                  li 
+                      span France
+                  li 
+                      span Malaisia
+                  li 
+                      span Australia                
+
+              li
+                | Blog
+                ul.submenu
+                  li
+                      span Travel Tips
+                  li
+                      span News
+                  li
+                      span Stories
+
+              li
+                | Pages
+                ul.submenu
+                  li
+                      span Pricing
+                  li
+                      span FAQ
+                  li
+                      span 404
+
+          .button-btn 
             a(href="#!" class="button") Contact us   
   .main 
     .container   

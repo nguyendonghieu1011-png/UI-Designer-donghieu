@@ -80,9 +80,39 @@ header {
   cursor: pointer;
 }
 
-.header .nav li:hover {
+.header .nav > li:hover {
   color: #f77606;
   transform: scale(1.1);
+}
+
+.nav > li {
+  position: relative;
+}
+
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  display: none;
+}
+
+.submenu li span{
+  width: 200px;
+  height: 30px;
+  border: 1px solid #fcfcfc;
+  display: flex;
+  align-items: center;
+  padding: 20px 10px;
+}
+
+.submenu li:hover {
+  color: #ffad65;
+}
+
+.nav li:hover .submenu {
+  display: block;
+  background-color: #fff;
 }
 
 .header .button-btn a {
@@ -1483,6 +1513,38 @@ height: 349px;
 .footer .img_ft #ins:hover {
   color: #7504ae;
 }
+/* 
+.footer .nav > li {
+  position: relative;
+}
+
+.footer .submenu {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  background: white;
+  display: none;
+}
+
+.footer .submenu li span{
+  width: 200px;
+  height: 30px;
+  border: 1px solid #fcfcfc;
+  display: flex;
+  align-items: center;
+  padding: 20px 10px;
+}
+
+.footer .submenu li:hover {
+  color: #8dd6e4
+}
+
+.footer .nav li:hover .submenu {
+  display: block;
+  background-color: #fff;
+} */
+
+
 
  
 
