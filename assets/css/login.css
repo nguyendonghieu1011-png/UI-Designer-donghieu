@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&family=Poppins:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sekuya&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+HTML 
+
+body {
+  font-size: 1.6rem;
+  font-family: Inter;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 1400px;
+  max-width: calc(100% - 48px);
+  margin: 0 auto;
+}
+
+.login .logo {
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  gap: 8px
+}
+
+.logo .tl {
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.logo .desc {
+  color: #f77606;
+}
+
+.password .pw_fg {
+  display: flex;
+  gap: 198px;
+}
+
+
+.field_login .email h4 {
+  color: rgb(40, 40, 40);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.field_login .password h4, p {
+  margin-top: 18px;
+  color: rgb(40, 40, 40);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.email input {
+  border: 2px solid rgb(233, 233, 233);
+  width: 400px;
+  height: 20px;
+  padding: 22px 14px;
+  border-radius: 8px;
+}
+
+.password input {
+  border: 2px solid rgb(233, 233, 233);
+  width: 400px;
+  height: 20px;
+  padding: 22px 14px;
+  border-radius: 8px;
+}
