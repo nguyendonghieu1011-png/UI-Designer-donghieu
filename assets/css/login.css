@@ -6,13 +6,22 @@
   margin: 0;
 }
 
-HTML 
-
 body {
   font-size: 1.6rem;
   font-family: Inter;
   background-color: #fff;
   overflow-x: hidden;
+
+  background-image: url("../img/d479d1f50f747cc61a522c93e65b11979aafc5e3.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100%;
+}
+
+input:focus,
+button:focus {
+  outline: none;
 }
 
 .container {
@@ -37,6 +46,49 @@ body {
   color: #f77606;
 }
 
+.wc_lg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 540px;
+  min-height: 440px;
+  margin: 0 auto;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+  border: 1px solid rgba(255,255,255,0.5);
+  border-radius: 8px;
+}
+
+.welcome {
+  width: 500px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.welcome h1 {
+  color: #de6a04;
+  font-family: Poppins;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 52px;
+}
+
+.welcome p {
+  font-size: 1.1rem;
+  color: #6c6c6c;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 32px;
+}
+
+.email input::placeholder {
+  color:#bababa
+}
+
+.field_login input::placeholder {
+  color: #bababa
+}
+
 .password .pw_fg {
   display: flex;
   gap: 198px;
@@ -50,7 +102,7 @@ body {
   line-height: 28px;
 }
 
-.field_login .password h4, p {
+.field_login .password h4 {
   margin-top: 18px;
   color: rgb(40, 40, 40);
   font-size: 1rem;
@@ -58,9 +110,23 @@ body {
   line-height: 28px;
 }
 
+.field_login .password .pw {
+  margin-top: 18px;
+  color: rgb(3, 3, 122);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 28px;
+  text-decoration: underline;
+  cursor: pointer
+}
+
+.field_login .password .pw:hover {
+  color: rgb(6, 6, 180);
+}
+
 .email input {
   border: 2px solid rgb(233, 233, 233);
-  width: 400px;
+  width: 403px;
   height: 20px;
   padding: 22px 14px;
   border-radius: 8px;
@@ -68,8 +134,25 @@ body {
 
 .password input {
   border: 2px solid rgb(233, 233, 233);
-  width: 400px;
+  width: 403px;
   height: 20px;
   padding: 22px 14px;
   border-radius: 8px;
+}
+
+.sign_in a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 34px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: #f77606;
+  height: 45px;
+  border-radius: 22px;
+}
+
+.sign_in a:hover {
+  background-color: #31c3e0;
 }
