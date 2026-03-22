@@ -115,14 +115,24 @@ header {
   background-color: #fff;
 }
 
+.header .button-btn {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+
+.button-btn i {
+  font-size: 32px;
+  color: #9b9b9b;
+}
 .header .button-btn a {
   text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 15px;
-  width: 165px;
-  height: 64px;
+  border-radius: 24px;
+  width: 110px;
+  height: 44px;
   color: #fff;
   background-color: #31c3e0;
   font-size: 1.8rem;
@@ -131,6 +141,25 @@ header {
 
 .header .button-btn a:hover {
   background-color: #f77606;
+}
+
+.header .button-btn #sign_in {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+  border: 2px solid #a4a4a4;
+  width: 110px;
+  height: 44px;
+  color: #505050;
+  background-color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.header .button-btn #sign_in:hover {
+  opacity: 0.9;
 }
 
 /* .header .sign {
