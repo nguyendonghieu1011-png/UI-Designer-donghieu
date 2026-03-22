@@ -11,7 +11,6 @@ body {
   font-family: Inter;
   background-color: #fff;
   overflow-x: hidden;
-
   background-image: url("../img/d479d1f50f747cc61a522c93e65b11979aafc5e3.png");
   background-size: cover;
   background-position: center;
@@ -25,7 +24,7 @@ button:focus {
 }
 
 .container {
-  width: 1400px;
+  width: 1300px;
   max-width: calc(100% - 48px);
   margin: 0 auto;
 }
@@ -57,6 +56,7 @@ button:focus {
   box-shadow: 0 25px 45px rgba(0,0,0,0.1);
   border: 1px solid rgba(255,255,255,0.5);
   border-radius: 8px;
+  padding: 15px 0 29px 0;
 }
 
 .welcome {
@@ -70,7 +70,7 @@ button:focus {
   font-family: Poppins;
   font-size: 2rem;
   font-weight: 500;
-  line-height: 52px;
+  margin-bottom: 8px;
 }
 
 .welcome p {
@@ -80,6 +80,12 @@ button:focus {
   line-height: 30px;
   margin-bottom: 32px;
 }
+
+/* .email input,
+.password input {
+  display: block;
+  margin: 0 auto;
+} */
 
 .email input::placeholder {
   color:#bababa
@@ -91,9 +97,9 @@ button:focus {
 
 .password .pw_fg {
   display: flex;
-  gap: 198px;
+  justify-content: space-between;
+  align-items: center;
 }
-
 
 .field_login .email h4 {
   color: rgb(40, 40, 40);
@@ -126,15 +132,15 @@ button:focus {
 
 .email input {
   border: 2px solid rgb(233, 233, 233);
-  width: 403px;
-  height: 20px;
-  padding: 22px 14px;
+  min-width: 403px;
+  height: 45px;
+  padding: 0px 14px;
   border-radius: 8px;
 }
 
 .password input {
   border: 2px solid rgb(233, 233, 233);
-  width: 403px;
+  min-width: 403px;
   height: 20px;
   padding: 22px 14px;
   border-radius: 8px;
@@ -156,3 +162,38 @@ button:focus {
 .sign_in a:hover {
   background-color: #31c3e0;
 }
+
+.Or span {
+  color: #464646;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 60px;
+  padding: 10px;
+}
+
+.Or::before, 
+.Or::after {
+  content: "";
+  display: inline-block;
+  width: 180px;
+  height: 2px;
+  background-color: #464646;
+}
+
+.Sign_up span {
+  font-size: 1.1rem;
+  color: black;
+  font-family: Inter;
+  font-weight: 400;
+}
+
+.Sign_up .su {
+  color: #de6a04;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.Sign_up .su:hover {
+  color:#d56604f6
+}
+
