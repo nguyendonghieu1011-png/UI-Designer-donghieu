@@ -8,436 +8,473 @@ html(lang="en")
     link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css")
     title UI-Designer
   body 
+    header
+      .header 
+        .container 
+          .body 
+            .logo 
+              img(src="../assets/favicon/Union.svg" alt="")
+              h1.text-logo Safe Tour 
+              span .
 
-  header
-    .header 
-     .container 
-       .body 
-          .logo 
-           img(src="../assets/favicon/Union.svg" alt="")
-           h1.text-logo Safe Tour 
-             span .
+            ul.nav
+                li Home
 
-          ul.nav
-              li Home
+                li
+                  | About
+                  ul.submenu
+                    li 
+                        span Our Story
+                    li 
+                        span Team
+                    li 
+                        span Careers
 
-              li
-                | About
-                ul.submenu
-                  li 
-                      span Our Story
-                  li 
-                      span Team
-                  li 
-                      span Careers
+                li
+                  | Destinations
+                  ul.submenu
+                    li 
+                        span Asia
+                    li 
+                        span Europe
+                    li 
+                        span America
+                    li 
+                        span Korean
+                    li 
+                        span France
+                    li 
+                        span Malaisia
+                    li 
+                        span Australia                
 
-              li
-                | Destinations
-                ul.submenu
-                  li 
-                      span Asia
-                  li 
-                      span Europe
-                  li 
-                      span America
-                  li 
-                      span Korean
-                  li 
-                      span France
-                  li 
-                      span Malaisia
-                  li 
-                      span Australia                
+                li
+                  | Blog
+                  ul.submenu
+                    li
+                        span Travel Tips
+                    li
+                        span News
+                    li
+                        span Stories
 
-              li
-                | Blog
-                ul.submenu
-                  li
-                      span Travel Tips
-                  li
-                      span News
-                  li
-                      span Stories
+                li
+                  | Pages
+                  ul.submenu
+                    li
+                        span Pricing
+                    li
+                        span FAQ
+                    li
+                        span 404
 
-              li
-                | Pages
-                ul.submenu
-                  li
-                      span Pricing
-                  li
-                      span FAQ
-                  li
-                      span 404
-
-          .button-btn 
-            i(class="fa-solid fa-bell")
-            a(href="login.html" id="sign_in") Sign In   
-            a(href="login.html" id="sign_up") Sign Up
-  .main 
-    .container   
-      .body
-
-        .main-left
-          h1.title Let's Make Your Best Trip Ever
-          p.desc Plan and book your perfect trip with expert advice, travel tips, destination information and inspiration from us.
-          .button-btn
-            a(href="#!" id="demo-1") Discover Now
-            .play-btn
-              img(src="../assets/img/Play.svg" alt="" class="thumb-play")
-              span Learn More
-
-        .main-right
-            .img-btn
-              img(src="../assets/img/Traveling-pana.svg" alt="" class="img-person")
-              .time
-                img(src="../assets/img/Group 4260.svg" alt="")
-                span 224
-                p Total trip (month)
-
-            .review-list
-              .item
-                img(src="../assets/favicon/settings (2).png" alt="")
-                .rv
-                  span 12
-                  p Years Experiences
-
-              .item
-                img(src="../assets/favicon/trophy-star.png" alt="")
-                .rv
-                  span 29
-                  p Awards Gained
-
-              .item
-                img(src="../assets/favicon/house-building.png" alt="")
-                .rv
-                  span 725+
-                  p Property Build   
-  .search
-    .container
+            .button-btn 
+              i(class="fa-solid fa-bell")
+              a(href="login.html" id="sign_in") Sign In   
+              a(href="login.html" id="sign_up") Sign Up
+    .main 
+      .container   
         .body
-          .address-list
-            .location_ad
-              h3 Location
-              .select
-                p.desc Bali, Indonesia
-                svg(                  
-                xmlns="http://www.w3.org/2000/svg"
-                width="8"
-                height="5"
-                viewBox="0 0 8 5"
-                fill="none"
-                )
-                  path(
-                  d="M7.05666 0L4 3.05666L0.943344 0L0 0.943312L4 4.94331L8 0.943312L7.05666 0Z"
-                  fill="black")
-            .City
-              h3 City
-              .select
-                p.desc Prambanan
-                svg(                  
-                xmlns="http://www.w3.org/2000/svg"
-                width="8"
-                height="5"
-                viewBox="0 0 8 5"
-                fill="none"
-                )
-                  path(
-                  d="M7.05666 0L4 3.05666L0.943344 0L0 0.943312L4 4.94331L8 0.943312L7.05666 0Z"
-                  fill="black")
-            .Guest
-              h3 Guest
-              .select
-                p.desc 8 Persons
-                svg(                  
+
+          .main-left
+            h1.title Let's Make Your Best Trip Ever
+            p.desc Plan and book your perfect trip with expert advice, travel tips, destination information and inspiration from us.
+            .button-btn
+              a(href="#!" id="demo-1") Discover Now
+              .play-btn
+                img(src="../assets/img/Play.svg" alt="" class="thumb-play")
+                span Learn More
+
+          .main-right
+              .img-btn
+                img(src="../assets/img/Traveling-pana.svg" alt="" class="img-person")
+                .time
+                  img(src="../assets/img/Group 4260.svg" alt="")
+                  span 224
+                  p Total trip (month)
+
+              .review-list
+                .item
+                  img(src="../assets/favicon/settings (2).png" alt="")
+                  .rv
+                    span 12
+                    p Years Experiences
+
+                .item
+                  img(src="../assets/favicon/trophy-star.png" alt="")
+                  .rv
+                    span 29
+                    p Awards Gained
+
+                .item
+                  img(src="../assets/favicon/house-building.png" alt="")
+                  .rv
+                    span 725+
+                    p Property Build   
+    .search
+      .container
+          .body
+            .address-list
+              .location_ad
+                h3 Location
+                .select
+                  p.desc Bali, Indonesia
+                  svg(                  
                   xmlns="http://www.w3.org/2000/svg"
                   width="8"
                   height="5"
                   viewBox="0 0 8 5"
                   fill="none"
-                )
-                  path(
-                  d="M7.05666 0L4 3.05666L0.943344 0L0 0.943312L4 4.94331L8 0.943312L7.05666 0Z"
-                  fill="black")
-            .find
-              img(src="../assets/favicon/Icon (3).svg" alt="")
-              span Search
-  .tour
-    .container
-        .body
-          .tour-review 
-            .tour-btn
-                h1.tour-title Our Best Tour
-                p.desc These are also locations where it’s easy to feel healthier, happier and less stressed than in America. And for more destinations on the Global Retirement Index.
-            .button-tours
-                a(href="#!" class="button-btn") See all tours
-
-          -
-            const cardItems = [
-              {img:"../assets/img/pexels-amine-m'siouri-2245436 1.png", price: '$150/day', title: 'Cairns Travel', ar: "../assets/favicon/Frame 3.svg", address: "Calrns QLD, Australia", cd: "../assets/favicon/Frame 2.svg", calendar:"Oct 28, 2021", tm:"../assets/favicon/Frame 1.svg", time: "5 days" },
-              {img:"../assets/img/pexels-spencer-davis-4353632 1.png", price: '$110/day', title: 'Orlando Travel', ar: "../assets/favicon/Frame 3.svg", address: "Orlando, FL, USA", cd: "../assets/favicon/Frame 2.svg", calendar:"Jul 30,2021", tm:"../assets/favicon/Frame 1.svg", time: "3 days" },
-              {img:"../assets/img/pexels-vlada-karpovich-4449317 1.png", price: '$136/day', title: 'Malaysia', ar: "../assets/favicon/Frame 3.svg", address: "Malaisia", cd: "../assets/favicon/Frame 2.svg", calendar:"Jul 29, 2021", tm:"../assets/favicon/Frame 1.svg", time: "5 days" },
-            ]
-
-          mixin card(card)
-            div.item 
-              div.card_img 
-                img(src=card.img)
-              div.card-content
-                div.item_title
-                  span.tl_pc #{card.price}
-                  h1.tl_desc #{card.title}
-                div.addr
-                  img(src=card.ar)  
-                  span.ar_tl #{card.address}
-                div.time_list 
-                  div.time_calendar
-                    img(src=card.cd)  
-                    p #{card.calendar}
-                  div.time_d
-                    img(src=card.tm)
-                    p #{card.time}  
-
-          div.item_list
-            each card in cardItems 
-              +card(card)
-  .tourism
-    .container 
-        .body 
-          div.img_tourism 
-            img(src='../assets/img/chillchill.png')
-          div.tour_content  
-            div.tour_review 
-              h1.title Why Choose Us?
-              p.desc We make all the process easy. Dummy text ever since the is, when an unknown printer took.
-            div.tour_list 
-
-              -
-                const tourItems = [
-                  {image: "../assets/favicon/Icon (4).svg", title: "We make all the process easy", desc: "A galley of type and scrambled it to make a type when an unknown printer took"},
-                  {image: "../assets/favicon/Iocn.svg", title: "Private & Customized Tours", desc: "A galley of type and scrambled it to make a type when an unknown printer took"},
-                  {image: "../assets/favicon/Iocn (1).svg", title: "Immigration & Passport Help", desc: "A galley of type and scrambled it to make a type when an unknown printer took"}
-                ]
-
-              mixin tour(item) 
-                div.item_lt
-                  div.img_t 
-                    img(src=item.image) 
-                  div.tour_item
-                    h1.title #{item.title} 
-                    p.desc #{item.desc} 
-
-              div.tour_item_lt 
-                each item in tourItems
-                  +tour(item)
-  .trending 
-    .container 
-        .top
-            .trending-left
-                h1.title Trending 2022
-                p.desc Sost Brilliant reasons Entrada should be your one-stop-shop!
-            .trending-right
-                img(src='../assets/favicon/Scroll icons.svg')
-        .bottom
-          -
-            const tdItem = [
-              {image: '../assets/img/Images.png', title: 'Mountain Hiking Tour', place: '12 Places', activity: '3 Activites', st:'../assets/favicon/Ellipse 741.svg', price: '$895.50', sta: 'Safe Tour Agency'},
-              {image: '../assets/img/Images (1).png', title: 'Tran Skyline', place: '12 Places', activity: '3 Activites', st:'../assets/favicon/Ellipse 741.svg', price: '$769.99', sta: 'Safe Tour Agency'},
-              {image: '../assets/img/Images (2).png', title: 'Forest Wild Life', place: '12 Places', activity: '3 Activites', st:'../assets/favicon/Ellipse 741.svg', price: '$939.80', sta: 'Safe Tour Agency'},
-              {image: '../assets/img/Images (1).png', title: 'Tran Skyline', place: '12 Places', activity: '3 Activites', st:'../assets/favicon/Ellipse 741.svg', price: '$760.50', sta: 'Safe Tour Agency'}
-            ]
-
-          mixin td(item)
-            div.item
-              div.img_td
-                img(src=item.image)
-              div.tl_td
-                div.title_td
-                  h1.title= item.title
-                div.review 
-                  span= item.place
-                  span.at= item.activity
-                div.price_bt
-                  span= item.price
-                  a(href="#!") Book Now
-                div.sta_td
-                  img(src="../assets/favicon/Ellipse 741.svg")    
-                  span= item.sta
-    
-          div.td_list
-            each item in tdItem
-              +td(item)
-  .destination
-    .container 
-        .top 
-            .des
-                .tl_td 
-                    h1 Top Destination
-                    p Sost Brilliant reasons Entrada should be your one-stop-shop!
-                .sad_btn 
-                    a(src="#!") See all destination   
-
-        .bottom 
-            .item_1
-                img(src="../assets/img/Rectangle 4391.png" class="img") 
-                span.ds1 3.5     
-                .tl   
-                    h2 Vientam 
-                    p Worefall
-            .item_2
-                img(src="../assets/img/Rectangle 4392.png" class="img")      
-                span.ds 3.5  
-                .tl 
-                    h2 Vientam 
-                    p Worefall    
-            .item_3
-                img(src="../assets/img/4393.png" class="img")  
-                span.ds 3.5   
-                .tl 
-                    h2 Vientam 
-                    p Worefall       
-            .item_4
-                img(src="../assets/img/Rectangle 4394 (1).png" class="img")  
-                span.ds 3.5  
-                .tl 
-                    h2 Vientam 
-                    p Worefall        
-            .item_5
-                img(src="../assets/img/Rectangle 4395.png" class="img")  
-                span.ds 3.5   
-                .tl  
-                    h2 Vientam 
-                    p Worefall      
-            .item_6
-                img(src="../assets/img/Rectangle 4396.png" class="img")    
-                span.ds 3.5      
-                .tl  
-                    h2 Vientam 
-                    p Worefall
-  .ttype
-    .container 
-        .top
-            h1 Tour Type
-        .bottom 
-          -
-            const ttpItem = [
-              {img: "../assets/favicon/map-marker.png", title: "City Tours", km: "5 Tours - From" , nb: "550$"},
-              {img: "../assets/favicon/Icon (6).svg", title: "Beaches", km: "10 Tours - From" , nb: "250$"},
-              {img: "../assets/favicon/Icon (7).svg", title: "Museum Tours", km: "5 Tours - From" , nb: "399$"},
-              {img: "../assets/favicon/Icon (8).svg", title: "Cruises", km: "8 Tours - From" , nb: "850$"},
-            ]
-          mixin tourtp(item) 
-            div.location
-              div.lct_img
-                img(src=item.img)
-              div.lct_title 
-                h1= item.title
-              div.lct_km
-                span.km= item.km 
-                span.price= item.nb    
-          div.tour_tp
-            each item in ttpItem 
-              +tourtp(item)  
-  .review
-    .container 
-        .body
-            .left 
-                img(src="../assets/img/Study abroad-bro.svg" class="rv_im")
-            .right 
-                h1.rv_tl What our user say
-                p.desc “Adding live social proof was the #1 driver of increased revenue in all my experiments while at Airkey.” and the bran must survive atleast 1 year.    
-                div.admin 
-                  div.ad_img
-                    img(src="../assets/img/z7603128085802_3ef9886f705a5e208f58ed2bbc8dbab4.jpg" class="laptrinhvien_fullstack")
-                  div.Evaluate 
-                    span.fullName Nguyen Dong Hieu
-                    p UI Designer
-                    img(src="../assets/img/Rating.svg")  
-  .articles 
-    .container 
-        .top  
-            h1 Articles & Travel Guidings
-            p Travel has helped us to understand the meaning of life and it has helped us become better people. Each time we travel, we see the world with new eyes.
-            img(src="../assets/favicon/Vector 19.svg")
-        .bottom
-            .tourit_left
-              div.img_t
-                img(src="../assets/img/hot-air-balloons-828967_1920 1.png")
-              div.describe
-                div.title_t
-                    h1 The real voyage does not consist in seeking new
-                    span Jun 1, 2021
-                p Excited him now natural saw passage offices you minuter. At by asked being court hopes.   
+                  )
+                    path(
+                    d="M7.05666 0L4 3.05666L0.943344 0L0 0.943312L4 4.94331L8 0.943312L7.05666 0Z"
+                    fill="black")
+              .City
+                h3 City
+                .select
+                  p.desc Prambanan
+                  svg(                  
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="8"
+                  height="5"
+                  viewBox="0 0 8 5"
+                  fill="none"
+                  )
+                    path(
+                    d="M7.05666 0L4 3.05666L0.943344 0L0 0.943312L4 4.94331L8 0.943312L7.05666 0Z"
+                    fill="black")
+              .Guest
+                h3 Guest
+                .select
+                  p.desc 8 Persons
+                  svg(                  
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="8"
+                    height="5"
+                    viewBox="0 0 8 5"
+                    fill="none"
+                  )
+                    path(
+                    d="M7.05666 0L4 3.05666L0.943344 0L0 0.943312L4 4.94331L8 0.943312L7.05666 0Z"
+                    fill="black")
+              .find
+                img(src="../assets/favicon/Icon (3).svg" alt="")
+                span Search
+    .tour
+      .container
+          .body
+            .tour-review 
+              .tour-btn
+                  h1.tour-title Our Best Tour
+                  p.desc These are also locations where it’s easy to feel healthier, happier and less stressed than in America. And for more destinations on the Global Retirement Index.
+              .button-tours
+                  a(href="#!" class="button-btn") See all tours
 
             -
-              const tourItem = [
-              {img: "../assets/img/rock-3317906 1.png", title:"Mountains is always right destination.", text:"Farther so friends am to detract forbade", date:"Jun 1, 2021"},
-              {img: "../assets/img/Image.png", title:"Here Our's Life is either a daring adventure.", text:"One of the programs is Save Our I have personally.", date:"Jun 1, 2021"},
-              {img: "../assets/img/Image (1).png", title:"Here Our's Life is either a daring adventure.", text:"life is either a daring adventure or it's nothing", date:"Jun 1, 2021"},
+              const cardItems = [
+                {img:"../assets/img/pexels-amine-m'siouri-2245436 1.png", price: '$150/day', title: 'Cairns Travel', ar: "../assets/favicon/Frame 3.svg", address: "Calrns QLD, Australia", cd: "../assets/favicon/Frame 2.svg", calendar:"Oct 28, 2021", tm:"../assets/favicon/Frame 1.svg", time: "5 days" },
+                {img:"../assets/img/pexels-spencer-davis-4353632 1.png", price: '$110/day', title: 'Orlando Travel', ar: "../assets/favicon/Frame 3.svg", address: "Orlando, FL, USA", cd: "../assets/favicon/Frame 2.svg", calendar:"Jul 30,2021", tm:"../assets/favicon/Frame 1.svg", time: "3 days" },
+                {img:"../assets/img/pexels-vlada-karpovich-4449317 1.png", price: '$136/day', title: 'Malaysia', ar: "../assets/favicon/Frame 3.svg", address: "Malaisia", cd: "../assets/favicon/Frame 2.svg", calendar:"Jul 29, 2021", tm:"../assets/favicon/Frame 1.svg", time: "5 days" },
+              ]
+
+            mixin card(card)
+              div.item 
+                div.card_img 
+                  img(src=card.img)
+                div.card-content
+                  div.item_title
+                    span.tl_pc #{card.price}
+                    h1.tl_desc #{card.title}
+                  div.addr
+                    img(src=card.ar)  
+                    span.ar_tl #{card.address}
+                  div.time_list 
+                    div.time_calendar
+                      img(src=card.cd)  
+                      p #{card.calendar}
+                    div.time_d
+                      img(src=card.tm)
+                      p #{card.time}  
+
+            div.item_list
+              each card in cardItems 
+                +card(card)
+    .tourism
+      .container 
+          .body 
+            div.img_tourism 
+              img(src='../assets/img/chillchill.png')
+            div.tour_content  
+              div.tour_review 
+                h1.title Why Choose Us?
+                p.desc We make all the process easy. Dummy text ever since the is, when an unknown printer took.
+              div.tour_list 
+
+                -
+                  const tourItems = [
+                    {image: "../assets/favicon/Icon (4).svg", title: "We make all the process easy", desc: "A galley of type and scrambled it to make a type when an unknown printer took"},
+                    {image: "../assets/favicon/Iocn.svg", title: "Private & Customized Tours", desc: "A galley of type and scrambled it to make a type when an unknown printer took"},
+                    {image: "../assets/favicon/Iocn (1).svg", title: "Immigration & Passport Help", desc: "A galley of type and scrambled it to make a type when an unknown printer took"}
+                  ]
+
+                mixin tour(item) 
+                  div.item_lt
+                    div.img_t 
+                      img(src=item.image) 
+                    div.tour_item
+                      h1.title #{item.title} 
+                      p.desc #{item.desc} 
+
+                div.tour_item_lt 
+                  each item in tourItems
+                    +tour(item)
+    .trending 
+      .container 
+          .top
+              .trending-left
+                  h1.title Trending 2022
+                  p.desc Sost Brilliant reasons Entrada should be your one-stop-shop!
+              .trending-right
+                  .swiper-button-prev.custom-btn
+                  .swiper-button-next.custom-btn
+
+      .bottom
+            -
+              const tdItem = [
+                {image: '../assets/img/Images.png', title: 'Mountain Hiking Tour', place: '12 Places', activity: '3 Activites', st:'../assets/favicon/Ellipse 741.svg', price: '$895.50', sta: 'Safe Tour Agency'},
+                {image: '../assets/img/Images (1).png', title: 'Tran Skyline', place: '12 Places', activity: '3 Activites', st:'../assets/favicon/Ellipse 741.svg', price: '$769.99', sta: 'Safe Tour Agency'},
+                {image: '../assets/img/Images (2).png', title: 'Forest Wild Life', place: '12 Places', activity: '3 Activites', st:'../assets/favicon/Ellipse 741.svg', price: '$939.80', sta: 'Safe Tour Agency'},
+                {image: '../assets/img/Images (1).png', title: 'Tran Skyline', place: '12 Places', activity: '3 Activites', st:'../assets/favicon/Ellipse 741.svg', price: '$760.50', sta: 'Safe Tour Agency'},
+                {image: '../assets/img/Images (1).png', title: 'Tran Skyline', place: '12 Places', activity: '3 Activites', st:'../assets/favicon/Ellipse 741.svg', price: '$760.50', sta: 'Safe Tour Agency'},
+                {image: '../assets/img/Images (1).png', title: 'Tran Skyline', place: '12 Places', activity: '3 Activites', st:'../assets/favicon/Ellipse 741.svg', price: '$760.50', sta: 'Safe Tour Agency'},
+                {image: '../assets/img/Images (1).png', title: 'Tran Skyline', place: '12 Places', activity: '3 Activites', st:'../assets/favicon/Ellipse 741.svg', price: '$760.50', sta: 'Safe Tour Agency'}
+              ]
+
+            mixin td(item)
+              div.item.swiper-slide
+                div.img_td
+                  img(src=item.image)
+                div.tl_td
+                  div.title_td
+                    h1.title= item.title
+                  div.review 
+                    span= item.place
+                    span.at= item.activity
+                  div.price_bt
+                    span= item.price
+                    a(href="#!") Book Now
+                  div.sta_td
+                    img(src="../assets/favicon/Ellipse 741.svg")    
+                    span= item.sta
+      
+            .td_list.swiper.mySwiper
+                .swiper-wrapper
+                    each item in tdItem
+                        +td(item)
+    .destination
+      .container 
+          .top 
+              .des
+                  .tl_td 
+                      h1 Top Destination
+                      p Sost Brilliant reasons Entrada should be your one-stop-shop!
+                  .sad_btn 
+                      a(src="#!") See all destination   
+
+          .bottom 
+              .item_1
+                  img(src="../assets/img/Rectangle 4391.png" class="img") 
+                  span.ds1 3.5     
+                  .tl   
+                      h2 Vientam 
+                      p Worefall
+              .item_2
+                  img(src="../assets/img/Rectangle 4392.png" class="img")      
+                  span.ds 3.5  
+                  .tl 
+                      h2 Vientam 
+                      p Worefall    
+              .item_3
+                  img(src="../assets/img/4393.png" class="img")  
+                  span.ds 3.5   
+                  .tl 
+                      h2 Vientam 
+                      p Worefall       
+              .item_4
+                  img(src="../assets/img/Rectangle 4394 (1).png" class="img")  
+                  span.ds 3.5  
+                  .tl 
+                      h2 Vientam 
+                      p Worefall        
+              .item_5
+                  img(src="../assets/img/Rectangle 4395.png" class="img")  
+                  span.ds 3.5   
+                  .tl  
+                      h2 Vientam 
+                      p Worefall      
+              .item_6
+                  img(src="../assets/img/Rectangle 4396.png" class="img")    
+                  span.ds 3.5      
+                  .tl  
+                      h2 Vientam 
+                      p Worefall
+    .ttype
+      .container 
+          .top
+              h1 Tour Type
+          .bottom 
+            -
+              const ttpItem = [
+                {img: "../assets/favicon/map-marker.png", title: "City Tours", km: "5 Tours - From" , nb: "550$"},
+                {img: "../assets/favicon/Icon (6).svg", title: "Beaches", km: "10 Tours - From" , nb: "250$"},
+                {img: "../assets/favicon/Icon (7).svg", title: "Museum Tours", km: "5 Tours - From" , nb: "399$"},
+                {img: "../assets/favicon/Icon (8).svg", title: "Cruises", km: "8 Tours - From" , nb: "850$"},
+              ]
+            mixin tourtp(item) 
+              div.location
+                div.lct_img
+                  img(src=item.img)
+                div.lct_title 
+                  h1= item.title
+                div.lct_km
+                  span.km= item.km 
+                  span.price= item.nb    
+            div.tour_tp
+              each item in ttpItem 
+                +tourtp(item)  
+    .review
+      .container 
+          .body
+              .left 
+                  img(src="../assets/img/Study abroad-bro.svg" class="rv_im")
+              .right 
+                  h1.rv_tl What our user say
+                  p.desc “Adding live social proof was the #1 driver of increased revenue in all my experiments while at Airkey.” and the bran must survive atleast 1 year.    
+                  div.admin 
+                    div.ad_img
+                      img(src="../assets/img/z7603128085802_3ef9886f705a5e208f58ed2bbc8dbab4.jpg" class="laptrinhvien_fullstack")
+                    div.Evaluate 
+                      span.fullName Nguyen Dong Hieu
+                      p UI Designer
+                      img(src="../assets/img/Rating.svg")  
+    .articles 
+      .container 
+          .top  
+              h1 Articles & Travel Guidings
+              p Travel has helped us to understand the meaning of life and it has helped us become better people. Each time we travel, we see the world with new eyes.
+              img(src="../assets/favicon/Vector 19.svg")
+          .bottom
+              .tourit_left
+                div.img_t
+                  img(src="../assets/img/hot-air-balloons-828967_1920 1.png")
+                div.describe
+                  div.title_t
+                      h1 The real voyage does not consist in seeking new
+                      span Jun 1, 2021
+                  p Excited him now natural saw passage offices you minuter. At by asked being court hopes.   
+
+              -
+                const tourItem = [
+                {img: "../assets/img/rock-3317906 1.png", title:"Mountains is always right destination.", text:"Farther so friends am to detract forbade", date:"Jun 1, 2021"},
+                {img: "../assets/img/Image.png", title:"Here Our's Life is either a daring adventure.", text:"One of the programs is Save Our I have personally.", date:"Jun 1, 2021"},
+                {img: "../assets/img/Image (1).png", title:"Here Our's Life is either a daring adventure.", text:"life is either a daring adventure or it's nothing", date:"Jun 1, 2021"},
+                ] 
+
+              mixin tour(item) 
+                div.item 
+                  div.t_img 
+                    img(src= item.img)
+                  div.tourds
+                    h1= item.title
+                    p= item.text
+                    span= item.date 
+
+              div.tours_list
+                each item in tourItem
+                    +tour(item)      
+    .Subscribe 
+      .container 
+          .body 
+              h1 Subscribe our newsletter
+              p Reciev latest news, update, and many other things every week. 
+              div.img_list
+                img(src="../assets/favicon/Polygon 15.svg" class="img1")
+                img(src="../assets/favicon/Ellipse 2702.svg" class="img2")
+              div.bt_btn
+                input(type="email" placeholder="Enter your email address")
+                button(type="submit")
+                  i(class="fas fa-paper-plane")
+    .menu 
+        .container  
+            -
+              const menuItem = [
+                {title: "Resources", cn1: "Download", cn2:"Help Center", cn3:"Guide Book", cn4:"App Directory"},
+                {title: "Travellers", cn1: "Why Travellers", cn2:"Enterprice", cn3:"Customer Stories", cn4:"Instagram post"},
+                {title: "Company", cn1: "Travelling", cn2:"About Locato", cn3:"Success", cn4:"Information"}
               ] 
 
-            mixin tour(item) 
-              div.item 
-                div.t_img 
-                  img(src= item.img)
-                div.tourds
-                  h1= item.title
-                  p= item.text
-                  span= item.date 
+            mixin menulist(item)  
+              ul 
+                  li.title_mn= item.title
+                  li.it= item.cn1
+                  li.it= item.cn2
+                  li.it= item.cn3
+                  li.it= item.cn4 
 
-            div.tours_list
-              each item in tourItem
-                  +tour(item)      
-  .Subscribe 
-    .container 
-        .body 
-            h1 Subscribe our newsletter
-            p Reciev latest news, update, and many other things every week. 
-            div.img_list
-              img(src="../assets/favicon/Polygon 15.svg" class="img1")
-              img(src="../assets/favicon/Ellipse 2702.svg" class="img2")
-            div.bt_btn
-              input(type="email" placeholder="Enter your email address")
-              button(type="submit")
-                i(class="fas fa-paper-plane")
-  .menu 
-      .container  
-          -
-            const menuItem = [
-              {title: "Resources", cn1: "Download", cn2:"Help Center", cn3:"Guide Book", cn4:"App Directory"},
-              {title: "Travellers", cn1: "Why Travellers", cn2:"Enterprice", cn3:"Customer Stories", cn4:"Instagram post"},
-              {title: "Company", cn1: "Travelling", cn2:"About Locato", cn3:"Success", cn4:"Information"}
-            ] 
+            div.menu_list 
+              each item in menuItem
+                  +menulist(item)    
 
-          mixin menulist(item)  
-            ul 
-                li.title_mn= item.title
-                li.it= item.cn1
-                li.it= item.cn2
-                li.it= item.cn3
-                li.it= item.cn4 
+              ul
+                  li.title_mn Get in Touch
+                  li.rv Feel free to get in touch with us vai email
+                  li.email 
+                    a(href="https://mail.google.com/mail/u/0/#inbox" target="_blank") nguyendonghieu1011@gmail.com
+    footer.footer
+          .container
+            .ft_list
+              .logo 
+                  img(src="../assets/favicon/Union.svg" alt="")
+                  h1.text-logo Safe Tour 
+                    span .
 
-          div.menu_list 
-            each item in menuItem
-                +menulist(item)    
+              ul.nav 
+                each x in ["Home", "About", "Destinations", "Tours", "Blog"]
+                  li= x    
 
-            ul
-                li.title_mn Get in Touch
-                li.rv Feel free to get in touch with us vai email
-                li.email 
-                  a(href="https://mail.google.com/mail/u/0/#inbox" target="_blank") nguyendonghieu1011@gmail.com
-  footer.footer
-        .container
-          .ft_list
-            .logo 
-                img(src="../assets/favicon/Union.svg" alt="")
-                h1.text-logo Safe Tour 
-                  span .
+              div.img_ft   
+                      i(class="fa-brands fa-facebook" id="fb")
+                      i(class="fa-brands fa-square-instagram" id="ins")
+                      i(class="fa-brands fa-weixin" id="tw")
+                    
+    script(src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js")
 
-            ul.nav 
-              each x in ["Home", "About", "Destinations", "Tours", "Blog"]
-                li= x    
-
-            div.img_ft   
-                    i(class="fa-brands fa-facebook" id="fb")
-                    i(class="fa-brands fa-square-instagram" id="ins")
-                    i(class="fa-brands fa-weixin" id="tw")
+    script.
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3.3,
+        spaceBetween: 20, 
+        grabCursor: true, 
+        slidesOffsetAfter: 100,
+        loop: true, // Kích hoạt vòng lặp vô hạn
+        loopedSlides: 5,
+        
+        navigation: {
+          nextEl: ".trending-right .swiper-button-next.custom-btn",
+          prevEl: ".trending-right .swiper-button-prev.custom-btn",
+        },
+        
+        breakpoints: {
+          320: { 
+            slidesPerView: 1.2, 
+            spaceBetween: 20 
+          },
+          768: { 
+            slidesPerView: 2.2, 
+            spaceBetween: 30 
+          },
+          1024: { 
+            slidesPerView: 3.2, 
+            spaceBetween: 41 
+          }
+        }
+      });

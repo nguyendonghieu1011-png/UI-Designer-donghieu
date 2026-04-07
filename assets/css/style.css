@@ -163,7 +163,7 @@ header {
 }
 
 /* .header .sign {
-  margin-left: 50px;
+  margin-left: 50px; 
   text-decoration: none;
   color: #fff;
   background-color: #f77606;
@@ -590,89 +590,169 @@ header {
   color:#848889;
 }
 
+.trending-right {
+    display: flex;
+    gap: 16px;
+    position: relative;
+    min-width: 100px; 
+    min-height: 50px;
+}
+
+.trending-right .custom-btn {
+    position: static; 
+    width: 50px;
+    height: 50px;
+    background-color: #FF702A;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #fff;
+    transition: all 0.25s ease;
+
+}
+
+.trending-right .swiper-button-prev::after { 
+  content: '<' !important; 
+}
+.trending-right .swiper-button-next::after { 
+  content: '>' !important; 
+}
+
+.trending-right .swiper-button-prev:hover {
+    background-color: #fff;
+    color: #f77606;
+    transform: scale(1.1);
+    border: 1px solid #f77606;
+}
+
+.trending-right .swiper-button-next:hover {
+    background-color: #fff;
+    color: #f77606;
+    transform: scale(1.1);
+    border: 1px solid #f77606;
+}
+
+
 /* trending - bottom */
-.trending .td_list {
-  padding: 60px 0 90px;
-  display: flex;
-  gap: 41px;
+
+/* Tối ưu container cho Swiper */
+.trending .bottom {
+position: relative;
+    width: 100vw; /* Bắt buộc dùng vw để lấy hết chiều ngang màn hình */
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding: 55px 0 80px;
+}
+
+.mySwiper {
+    width: 100%;
+    overflow: visible !important; /* Cho phép các slide trượt tràn lề phải màn hình */
+}
+
+.swiper-wrapper {
+    display: flex;
+}
+
+/* Định dạng từng item slide */
+.td_list .item {
+    padding: 14px;
+    border: 2px solid #eef0f1;
+    border-radius: 13px;
+    background: #fff;
+    /* Đảm bảo nội dung không bị co lại quá mức */
+    min-width: 0; 
+    flex-shrink: 0;
+    width: 370px; 
+    height: auto;
+}
+
+
+.td_list .img_td img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
 }
 
 .td_list .review {
-  display: flex;
-  gap: 13px;
+   display: flex; 
+   gap: 13px; 
+  }
+
+.td_list .review span { 
+  font-size: 1.2rem; 
+  color: #888282; 
+  margin-bottom: 30px; 
 }
 
-.td_list .review span {
-  font-size: 1.2rem;
-  color: #888282;
-  margin-bottom: 30px;
+.td_list .tl_td { 
+  padding: 10px; 
 }
 
-.td_list .item {
-  padding: 14px;
-  border: 2px solid #eef0f1;
-  border-radius: 13px;
+.td_list .title_td { 
+  font-size: 2rem; 
+  font-weight: 600; 
+  line-height: 42px; 
+  min-height: 84px; 
 }
 
-.td_list .tl_td {
-  padding: 10px
+.td_list .price_bt { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  margin-bottom: 40px; 
 }
 
-.td_list .title_td {
-  font-size: 2rem;
-  font-weight: 600;
-  line-height: 42px;
-
-}
-
-.td_list .price_bt {
-  margin-bottom: 40px;
-}
-
-.td_list .price_bt span {
-  font-size: 2.4rem;
-  font-weight: 600;
-}
-
-.td_list .price_bt {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.td_list .price_bt span { 
+  font-size: 2.4rem; 
+  font-weight: 600; 
 }
 
 .td_list .price_bt a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.4rem;
-  font-weight: 600;
-  text-decoration: none;
-  color: #31c3e0;
-  background-color: #fff;
-  width: 110px;
-  height:40px;
-  border: 2px solid #31c3e0;
-  border-radius: 9px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    font-size: 1.4rem; 
+    font-weight: 600; 
+    text-decoration: none;
+    color: #31c3e0; 
+    width: 110px; 
+    height: 40px;
+    border: 2px solid #31c3e0; 
+    border-radius: 9px;
+    transition: 0.3s;
 }
 
-.td_list .price_bt a:hover {
-  background-color: #31c3e0;
-  color: #fff;
-  border-color: #31c3e0;;
+.td_list .price_bt a:hover { 
+  background-color: #31c3e0; 
+  color: #fff; 
 }
 
-.td_list .sta_td {
-  display: flex;
-  align-items: center;
-  gap: 20px;
+.td_list .sta_td { 
+  display: flex; 
+  align-items: center; 
+  gap: 20px; 
 }
 
-.td_list .sta_td span {
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 26px;
-  color:#696c6e
+.td_list .sta_td span { 
+  font-size: 16px; 
+  font-weight: 500; 
+  color: #696c6e;
+ }
+
+.swiper-button-prev {
+    left: calc((100% - 1170px) / 2) !important; /* Thẳng hàng với mép trái slide đầu */
+    color: #31c3e0;
+}
+
+.swiper-button-next {
+    /* Ép nút Next nằm cách mép phải màn hình một khoảng cố định (ví dụ 20px) */
+    /* Hoặc bạn có thể để nó nằm ở mép phải của container 1170px */
+    right: 20px !important; 
+    color: #31c3e0;
+    z-index: 10; /* Đảm bảo nút luôn nằm trên các slide tràn */
 }
 
 /* destination - top */
@@ -793,7 +873,7 @@ header {
   font-weight: 700;
   font-family: Inter;
   line-height: 32px;
-  text-shadow: 0 6px 15px rgba(0, 0, 0, 0.20);
+  text-shadow: 0 6px 15px rgba(0, 0, 0, 0.20); 
 
 }
 
